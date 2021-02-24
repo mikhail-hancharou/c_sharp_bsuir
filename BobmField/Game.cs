@@ -266,9 +266,6 @@ namespace BombField
                 }
             }
         }
-        //*/
-
-
 
         private void FreePlace(int row, int col)
         {
@@ -365,7 +362,6 @@ namespace BombField
                                 {
                                     BombPlaceField[i, n]++;
                                 }
-
                             }
                         }
                         if (n > 0)
@@ -410,14 +406,7 @@ namespace BombField
 
         private void Draw()
         {
-            try
-            {
-                Console.Clear();
-            }
-            catch
-            {
-                Console.WriteLine("Error");
-            }
+            Console.Clear();
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\nGame \n");
             Console.ForegroundColor = ConsoleColor.DarkMagenta;

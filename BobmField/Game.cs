@@ -48,7 +48,6 @@ namespace BombField
                 if (FirstStep == true)
                 {
                     MakeBombField(Rows - 1, Columns - 1);
-                    //Console.WriteLine("Refresh");
                 }
                 UpdateField(Rows, Columns);
                 if (PlaceFlag == true)
@@ -93,7 +92,7 @@ namespace BombField
                 Console.ForegroundColor = ConsoleColor.White;
             }
         }
-        ///*
+
         private void Left(int row, int col)
         {
             if (col > 0 && ShowPlaceField[row, col - 1] != '0')
@@ -115,6 +114,7 @@ namespace BombField
                 }
             }
         }
+
         private void Right(int row, int col)
         {
             if (col < 15 - 1 && ShowPlaceField[row, col + 1] != '0')
@@ -136,6 +136,7 @@ namespace BombField
                 }
             }
         }
+
         private void Up(int row, int col)
         {
             if (row > 0 && ShowPlaceField[row - 1, col] != '0')
@@ -157,6 +158,7 @@ namespace BombField
                 }
             }
         }
+
         private void Down(int row, int col)
         {
             if (row < 15 - 1 && ShowPlaceField[row + 1, col] != '0')
@@ -178,6 +180,7 @@ namespace BombField
                 }
             }
         }
+
         private void DownLeft(int row, int col)
         {
             if (row < 15 - 1 && col > 0 && ShowPlaceField[row + 1, col - 1] != '0')
@@ -199,6 +202,7 @@ namespace BombField
                 }
             }
         }
+
         private void DownRight(int row, int col)
         {
             if (row < 15 - 1 && col < 15 - 1 && ShowPlaceField[row + 1, col + 1] != '0')

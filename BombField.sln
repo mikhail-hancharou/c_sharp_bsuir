@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BombField", "BombField.csproj", "{9AD043A3-45C0-48CE-AE90-2BAC49C0C937}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AD043A3-45C0-48CE-AE90-2BAC49C0C937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AD043A3-45C0-48CE-AE90-2BAC49C0C937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AD043A3-45C0-48CE-AE90-2BAC49C0C937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AD043A3-45C0-48CE-AE90-2BAC49C0C937}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C47B19BF-139C-4319-8141-53981933268C}
+	EndGlobalSection
+EndGlobal

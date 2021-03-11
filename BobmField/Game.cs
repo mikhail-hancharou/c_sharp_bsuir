@@ -11,6 +11,7 @@ namespace BombField
         private readonly char[,] ShowPlaceField = new char[15, 15];
         private readonly int[,] BombPlaceField = new int[15, 15];
         private bool PlaceFlag, FirstStep = true;
+
         public Game()
         {
             for (int i = 0; i < 15; i++)
@@ -27,7 +28,10 @@ namespace BombField
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.Write("\nEnter the number of row (1-15) or -1 to exit \n");
                 int.TryParse(Console.ReadLine(), out Rows);
-                if (Rows == -1) System.Environment.Exit(0);
+                if (Rows == -1)
+                {
+                    System.Environment.Exit(0);
+                }
                 while (Rows > 15 || Rows < 1)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
@@ -37,7 +41,10 @@ namespace BombField
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.Write("\nEnter the number of columns (1-15) or -1 to exit \n");
                 int.TryParse(Console.ReadLine(), out Columns);
-                if (Columns == -1) System.Environment.Exit(0);
+                if (Columns == -1)
+                {
+                    System.Environment.Exit(0);
+                }
                 while (Columns > 15 || Columns < 1)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;

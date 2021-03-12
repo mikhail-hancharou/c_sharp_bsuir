@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Lab2Part3
 {
@@ -6,27 +7,18 @@ namespace Lab2Part3
     {
         static void Main(string[] args)
         {
-            string your, help = null;
+            StringBuilder helpString = new StringBuilder();
             Console.WriteLine("Enter your string");
-            your = Console.ReadLine();
-            int i = your.Length;
-            int rightIndex = i, leftIndex;
-            while (i > 0)
+            string yourString;
+            yourString = Console.ReadLine();
+            string[] words = yourString.Split(' ');
+            for (int i = words.Length - 1; i >= 0; i--)
             {
-                if (your[i - 1] == ' ' || i == 1)
-                {
-                    leftIndex = i - 1;
-                    if (i == 1)
-                    {
-                        help += ' ';
-                    }
-                    help += your.Substring(leftIndex, rightIndex - leftIndex);
-                    rightIndex = leftIndex;
-                }
-                i--;
+                helpString.Append(words[i]);
+                helpString.Append(' ');
             }
-            your = help;
-            Console.WriteLine(your);
+            yourString = helpString.ToString();
+            Console.WriteLine(yourString);
             Console.ReadLine();
         }
     }

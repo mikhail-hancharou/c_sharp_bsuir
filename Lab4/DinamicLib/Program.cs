@@ -17,11 +17,11 @@ namespace MathClient
         static extern int Pow(int a, int power);
         [DllImport("../../UnmanagedCode.dll", CallingConvention = CallingConvention.StdCall)]
         static extern int Mod(int a, int b);
-        [DllImport("../../UnmanagedCode.dll", CallingConvention = CallingConvention.StdCall)]
+        [DllImport("../../UnmanagedCode.dll", CallingConvention = CallingConvention.Cdecl)]
         static extern int Abs(int a);
-        [DllImport("../../UnmanagedCode.dll", CallingConvention = CallingConvention.StdCall)]
+        [DllImport("../../UnmanagedCode.dll", CallingConvention = CallingConvention.Cdecl)]
         static extern int Min(int a, int b);
-        [DllImport("../../UnmanagedCode.dll", CallingConvention = CallingConvention.StdCall)]
+        [DllImport("../../UnmanagedCode.dll", CallingConvention = CallingConvention.Cdecl)]
         static extern int Max(int a, int b);
         static void Main(string[] args)
         {

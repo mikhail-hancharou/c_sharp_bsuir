@@ -10,6 +10,7 @@ namespace Lab5
             M,
             N,
             O,
+            Flying,
             undefined
         }
 
@@ -53,7 +54,7 @@ namespace Lab5
             undefined
         }
 
-        public string name { get; set; }
+        public string Name { get; set; }
         public TypesOfVehicle TypeOfVehicle { get; set; }
         public TypesOfColor TypeOfColor { get; set; }
         public Colors Color { get; set; }
@@ -66,7 +67,7 @@ namespace Lab5
 
         public Vehicle()
         {
-            name = null;
+            Name = null;
             TypeOfVehicle = TypesOfVehicle.undefined;
             TypeOfColor = TypesOfColor.undefined;
             Color = Colors.undefined;
@@ -80,7 +81,7 @@ namespace Lab5
 
         public Vehicle(string nameCar, TypesOfVehicle typesOfVehicle, TypesOfColor typesOfColor, Colors colors, TypesOfEngine typesOfEngine, TypesOfFuel typesOfFuel, double engineCapacity, double averageFuelСonsumption, int yearOfRelease, string vincode)
         {
-            name = nameCar;
+            Name = nameCar;
             TypeOfVehicle = typesOfVehicle;
             TypeOfColor = typesOfColor;
             Color = colors;
@@ -94,7 +95,7 @@ namespace Lab5
 
         public Vehicle(string nameCar, TypesOfVehicle typesOfVehicle, TypesOfColor typesOfColor, Colors colors, TypesOfEngine typesOfEngine, TypesOfFuel typesOfFuel)
         {
-            name = nameCar;
+            Name = nameCar;
             TypeOfVehicle = typesOfVehicle;
             TypeOfColor = typesOfColor;
             Color = colors;
@@ -104,7 +105,7 @@ namespace Lab5
 
         public Vehicle(string nameCar, double engineCapacity, double averageFuelСonsumption, int yearOfRelease, string vincode)
         {
-            name = nameCar;
+            Name = nameCar;
             EngineCapacity = engineCapacity;
             AverageFuelСonsumption = averageFuelСonsumption;
             YearOfRelease = yearOfRelease;
@@ -142,7 +143,7 @@ namespace Lab5
 
         public virtual void GetVehicleInfo()
         {
-            Console.WriteLine($"Name: {name}");
+            Console.WriteLine($"Name: {Name}");
             Console.WriteLine($"Type of vehicle: {TypeOfVehicle}");
             Console.WriteLine($"Type of color: {TypeOfColor}");
             Console.WriteLine($"Color: {Color}");

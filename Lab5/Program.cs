@@ -8,7 +8,7 @@ namespace Lab5
         {
             Car auto = new Car
             {
-                name = "Tesla Car",
+                Name = "Tesla Car",
                 TypeOfVehicle = Vehicle.TypesOfVehicle.M,
                 TypeOfColor = Vehicle.TypesOfColor.metalic,
                 Color = Vehicle.Colors.red,
@@ -22,7 +22,7 @@ namespace Lab5
             auto.SetVin("1294HFJ93JDSD4325");
             RaceCar sportCar = new RaceCar
             {
-                name = "Toyota Subaru",
+                Name = "Toyota Subaru",
                 TypeOfVehicle = Vehicle.TypesOfVehicle.M,
                 TypeOfColor = Vehicle.TypesOfColor.metalic,
                 Color = Vehicle.Colors.white,
@@ -48,7 +48,7 @@ namespace Lab5
             sportCar.HelpInfo();
             HardTruck truck = new HardTruck
             {
-                name = "Thunder Truck",
+                Name = "Thunder Truck",
                 TypeOfVehicle = Vehicle.TypesOfVehicle.N,
                 TypeOfColor = Vehicle.TypesOfColor.metalic,
                 Color = Vehicle.Colors.yellow,
@@ -65,6 +65,25 @@ namespace Lab5
             truck.UpWeightPossibilities(1000);
             truck.AddSkill(HardTruck.TypesOfTruck.pipeLayingMachines);
             truck.GetVehicleInfo();
+            Helicopter copter = new Helicopter
+            {
+                Name = "Heli-Meli-Copter",
+                TypeOfVehicle = Vehicle.TypesOfVehicle.Flying,
+                TypeOfColor = Vehicle.TypesOfColor.nonmetalic,
+                Color = Vehicle.Colors.green,
+                TypeOfEngine = Vehicle.TypesOfEngine.internalCombustionEngine,
+                TypeOfFuel = Vehicle.TypesOfFuel.diesel,
+                EngineCapacity = 400, //kWh or liters
+                AverageFuelСonsumption = 17, //W*h/km or liters
+                YearOfRelease = 2020,
+                TypeOfHelicopter = Helicopter.TypesOfHelicopters.jet,
+                TypeOfProperty = Helicopter.TypesOfProperty.personal,
+                LiftingCapacity = 7000
+            };
+            copter.SetVin("1234CMYEFGGHI6789");
+            copter.SetCurrentWorkload(3500);
+            copter.AddCargo(4000);
+            copter.GetVehicleInfo();
             Console.ReadKey();
         }
     }

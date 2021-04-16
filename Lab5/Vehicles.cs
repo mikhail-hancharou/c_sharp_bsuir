@@ -43,7 +43,7 @@ namespace Lab5
                 if (vehicles[index].Vincode == vin)
                 {
                     Console.WriteLine("\n---------------------");
-                    Console.WriteLine($"Name: {vehicles[index].name}");
+                    Console.WriteLine($"Name: {vehicles[index].Name}");
                     Console.WriteLine($"Type of vehicle: {vehicles[index].TypeOfVehicle}");
                     Console.WriteLine($"Type of color: {vehicles[index].TypeOfColor}");
                     Console.WriteLine($"Color: {vehicles[index].Color}");

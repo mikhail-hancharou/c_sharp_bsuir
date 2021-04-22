@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Lab5
 {
@@ -84,6 +85,12 @@ namespace Lab5
             copter.SetCurrentWorkload(3500);
             copter.AddCargo(4000);
             copter.GetVehicleInfo();
+            Vehicle transport = new Car();
+            Car peca = new RaceCar();
+            RaceCar pecoe = new RaceCar();
+            transport.GetVehicleInfo();
+            peca.GetVehicleInfo();
+            peca.HelpInfo();
             Console.ReadKey();
         }
     }

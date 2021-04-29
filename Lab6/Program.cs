@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lab5
+namespace lab6
 {
     class Program
     {
@@ -90,8 +90,8 @@ namespace Lab5
             RaceCar pecoe = new RaceCar();
             transport.GetVehicleInfo();
             peca.GetVehicleInfo();
-            //peca.HelpInfo();
             peca.HelpInfo();
+            IUpgradable upgrade = new RaceCar();
             Console.ReadKey();
         }
     }

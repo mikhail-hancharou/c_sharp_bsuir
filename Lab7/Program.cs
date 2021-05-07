@@ -34,7 +34,37 @@ namespace Lab7
             fr.Show();
             Console.WriteLine(fr1.ToString("F", null));
             Console.WriteLine(fr1.ToString("F4", null));
-            //Console.WriteLine(fr.ToDateTime());
+            Fraction f1 = new Fraction(15, 65);
+            Fraction f2 = new Fraction(44, 12);
+            Fraction temp;
+            temp = f1 * f2;
+            Console.WriteLine($"f1 * f2 = {temp.GetDoubleType()}");
+            temp = f1 / f2;
+            Console.WriteLine($"f1 / f2 = {temp.GetDoubleType()}");
+            temp = f1 + f2;
+            Console.WriteLine($"f1 + f2 = {temp.GetDoubleType()}");
+            temp = f1 - f2;
+            Console.WriteLine($"f1 - f2 = {temp.GetDoubleType()}");
+            Console.WriteLine($"f1 > f2 = {f1 > f2}");
+            Console.WriteLine($"f1 < f2 = {f1 < f2}");
+            Console.WriteLine($"f1 >= f2 = {f1 >= f2}");
+            Console.WriteLine($"f1 <= f2 = {f1 <= f2}");
+            Console.WriteLine($"f1 == f2 = {f1 == f2}");
+            Console.WriteLine($"f1 != f2 = {f1 != f2}");
+            Console.WriteLine("Testing string to object");
+            temp = Fraction.Parse("350/100");
+            Console.WriteLine($"testF = 350/150 = {temp.GetDoubleType()}");
+            temp = Fraction.Parse("1000");
+            Console.WriteLine($"testF = 1000 = {temp.GetDoubleType()}");
+            temp = Fraction.Parse("350.100");
+            Console.WriteLine($"testF = 350.150 = {temp.GetDoubleType()}");
+            temp = Fraction.Parse("350,100");
+            Console.WriteLine($"testF = 350,150 = {temp.GetDoubleType()}");
+            Console.WriteLine("Testing conversion operators and IConvertible");
+            Console.WriteLine($"f1.ToBoolean = {f1.ToBoolean(null)}");
+            Console.WriteLine($"f1.GetTypeCode = {f1.GetTypeCode()}");
+            Console.WriteLine($"f1.ToDouble = {f1.ToDouble(null)}");
+            Console.WriteLine($"f1.ToInt32 = {f1.ToInt32(null)}");
         }
     }
 }

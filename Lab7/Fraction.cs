@@ -112,6 +112,35 @@ namespace Lab7
             }
         }
 
+        public static explicit operator sbyte(Fraction fract)
+        {
+            return fract.ToSByte(null);
+        }
+        public static explicit operator short(Fraction fract)
+        {
+            return fract.ToInt16(null);
+        }
+        public static explicit operator int(Fraction fract)
+        {
+            return fract.ToInt32(null);
+        }
+        public static explicit operator long(Fraction fract)
+        {
+            return fract.ToInt64(null);
+        }
+        public static explicit operator float(Fraction fract)
+        {
+            return fract.ToSingle(null);
+        }
+        public static explicit operator double(Fraction fract)
+        {
+            return fract.ToDouble(null);
+        }
+        public static explicit operator decimal(Fraction fract)
+        {
+            return fract.ToDecimal(null);
+        }
+
         public static Fraction Parse(string number)
         {
             Fraction fraction;

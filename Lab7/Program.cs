@@ -65,6 +65,9 @@ namespace Lab7
             Console.WriteLine($"f1.GetTypeCode = {f1.GetTypeCode()}");
             Console.WriteLine($"f1.ToDouble = {f1.ToDouble(null)}");
             Console.WriteLine($"f1.ToInt32 = {f1.ToInt32(null)}");
+            Console.WriteLine((short)fr);
+            Console.WriteLine((int)fr);
+            Console.WriteLine((long)fr);
         }
     }
 }
